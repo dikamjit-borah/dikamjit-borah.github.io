@@ -26,9 +26,10 @@ h1, h2, h3, h4, h5, h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  right: 15px;
+  right: 50%;
+  left: 50%;
   bottom: 15px;
-  z-index: 99999;
+  
 }
 
 .back-to-top i {
@@ -39,13 +40,13 @@ h1, h2, h3, h4, h5, h6 {
   width: 40px;
   height: 40px;
   border-radius: 50px;
-  background: #ffb03b;
+  background:  #00897b;
   color: #fff;
   transition: all 0.4s;
 }
 
 .back-to-top i:hover {
-  background: #ffa012;
+  background: #00897b;
   color: #fff;
 }
 
@@ -65,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #topbar i {
-  color: #ffb03b;
+  color:  #00897b;
 }
 
 #topbar i + i {
@@ -94,11 +95,14 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   font-weight: 400;
   letter-spacing: 3px;
+
+  
 }
 
 #header .logo h1 a, #header .logo h1 a:hover {
   color: #fff;
   text-decoration: none;
+  align-items: center;
 }
 
 #header .logo img {
@@ -142,12 +146,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #ffb03b;
+  color:  #00897b;
   text-decoration: none;
 }
 
 .nav-menu .book a {
-  background: #ffb03b;
+  background:  #00897b;
   color: #fff;
   border-radius: 50px;
   margin: 0 0 0 20px;
@@ -160,7 +164,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu .book a:hover {
-  background: #ffa012;
+  background: #00897b;
   color: #fff;
 }
 
@@ -198,7 +202,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
-  color: #ffb03b;
+  color:  #00897b;
 }
 
 .nav-menu .drop-down > a:after {
@@ -293,12 +297,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #ffb03b;
+  color:  #00897b;
   text-decoration: none;
 }
 
 .mobile-nav .book a {
-  background: #ffb03b;
+  background:  #00897b;
   color: #fff;
   border-radius: 50px;
   margin: 0 0 0 20px;
@@ -312,7 +316,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav .book a:hover {
-  background: #ffa012;
+  background: #00897b;
   color: #fff;
 }
 
@@ -419,7 +423,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #mainmain h2 span {
-  color: #ffb03b;
+  color:  #00897b;
 }
 
 #mainmain p {
@@ -497,11 +501,11 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   color: #fff;
-  border: 2px solid #ffb03b;
+  border: 2px solid  #00897b;
 }
 
 #mainmain .btn-menu:hover, #mainmain .btn-book:hover {
-  background: #ffb03b;
+  background:  #00897b;
   color: #fff;
 }
 
@@ -544,7 +548,7 @@ section {
 }
 
 .section-title h2 span {
-  color: #ffb03b;
+  color:  #00897b;
 }
 
 .section-title p {
@@ -602,7 +606,7 @@ section {
 
 .about .content ul i {
   font-size: 20px;
-  color: #ffb03b;
+  color:  #00897b;
   position: absolute;
   left: 0;
   top: 2px;
@@ -623,7 +627,7 @@ section {
 .about .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#ffb03b 50%, rgba(255, 176, 59, 0.4) 52%);
+  background: radial-gradient( #00897b 50%, rgba(255, 176, 59, 0.4) 52%);
   border-radius: 50%;
   display: block;
   position: absolute;
@@ -671,7 +675,7 @@ section {
 }
 
 .about .play-btn:hover::after {
-  border-left: 15px solid #ffb03b;
+  border-left: 15px solid  #00897b;
   transform: scale(20);
 }
 
@@ -734,6 +738,12 @@ section {
 /*--------------------------------------------------------------
 # Whu Us
 --------------------------------------------------------------*/
+.projects .box .languages
+{
+  color: #616161;
+}
+
+
 .projects .box {
   padding: 50px 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -763,7 +773,7 @@ section {
 }
 
 .projects .box:hover {
-  background: #ffb03b;
+  background:  #00897b;
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
@@ -794,13 +804,13 @@ section {
   margin: 0 3px 10px 3px;
   transition: all ease-in-out 0.3s;
   background: #fff;
-  border: 2px solid #ffb03b;
+  border: 2px solid  #00897b;
   border-radius: 50px;
 }
 
 .menu #menu-flters li:hover, .menu #menu-flters li.filter-active {
   color: #fff;
-  background: #ffb03b;
+  background:  #00897b;
 }
 
 .menu #menu-flters li:last-child {
@@ -928,7 +938,7 @@ section {
 }
 
 .book .php-email-form button[type="submit"] {
-  background: #ffb03b;
+  background:  #00897b;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -937,7 +947,7 @@ section {
 }
 
 .book .php-email-form button[type="submit"]:hover {
-  background: #ffa012;
+  background: #00897b;
 }
 
 
@@ -955,7 +965,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #ffb03b;
+  color:  #00897b;
   float: left;
   width: 44px;
   height: 44px;
@@ -984,7 +994,7 @@ section {
 }
 
 .contact .info:hover i {
-  background: #ffb03b;
+  background:  #00897b;
   color: #fff;
 }
 
@@ -1060,7 +1070,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #ffb03b;
+  background:  #00897b;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1069,7 +1079,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #ffa012;
+  background: #00897b;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1104,7 +1114,7 @@ section {
 #footer h3 {
   font-size: 36px;
   font-weight: 700;
-  color: #ffb03b;
+  color:  #00897b;
   position: relative;
   padding: 0;
   margin: 0 0 15px 0;
@@ -1137,7 +1147,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #ffb03b;
+  background:  #00897b;
 }
 
 #footer .copyright {
