@@ -100,12 +100,28 @@
         <img src="assets/img/dp.jpg" style="height:21%; width: 21%; border-radius: 50%" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
         
         <p style="color: #FFFFFF"><em>Dikamjit Borah</em><br>Developer, Photographer</p>
-        <p>Skills: Android, Java, Python, Web scraping and automation</p>
+        <p>Skills: Android, Java, Python, Web dev, Web scraping and automation</p>
         <!-- <p style="color: #FFFFFF"><a href="https://www.github.com/hunkyxstudman">Software Projects</a></p>
        <p style="color: #FFFFFF"><a href="https://www.instagram.com/hobarb_">Photos</a></p> -->
-        <p> <button type="button" class="btn btn-primary" style="margin: 0; position: absolute; left: 50%; -ms-transform: translate(-50%, -50%);transform: translate(-50%, -50%); margin-top: 24px;"><a href="resume.pdf" download>View my resume</a></button></p>
+
+      
+        <p> <button type="button" onclick="myFunction()" class="btn btn-primary" style="margin: 0; position: absolute; left: 50%; -ms-transform: translate(-50%, -50%);transform: translate(-50%, -50%); margin-top: 24px;">View my resume</button></p>
         <p align="center" style="margin-top:80px"><iframe src="https://giphy.com/embed/j5my9yn7arjsgoib12" width="120" height="120" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></p>
       <p>Scroll down ⤵️</p>
+      <script>
+        function myFunction(){
+         var pd = prompt("Enter the password given by Hobarb");
+         if(pd == "killbill334455")
+         {
+          window.location.href = "resume.pdf";
+         }
+         else
+         {
+            alert("Wrong password! Hobarb doesn't want you seeing his embarrassing resume 😢 ")
+         }
+        }
+       
+      </script>
         
       </div>
       
