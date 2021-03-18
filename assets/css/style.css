@@ -12,7 +12,7 @@ a {
 }
 
 a:hover {
-  color: #ffc4;
+  color: rgba(255, 229, 204, 0.267);
   text-decoration: none;
 }
 
