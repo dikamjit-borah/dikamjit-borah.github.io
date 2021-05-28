@@ -1,0 +1,252 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --timelineBox: var(--secondaryLight);
+
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: var(--primaryDark);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.container {
+  padding: 15px 30px;
+  position: relative;
+  background: inherit;
+  width: 50%;
+}
+
+.container.left {
+  left: 0;
+}
+
+.container.right {
+  left: 50%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 8px);
+  right: -8px;
+  background: #ffffff;
+  border: 2px solid var(--primaryDark);
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.container.right::after {
+  left: -8px;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  top: calc(50% - 1px);
+  right: 8px;
+  background: var(--primaryDark);
+  z-index: 1;
+}
+
+.container.right::before {
+  left: 8px;
+}
+
+.companyLogo{
+  padding: 2rem;
+  height: 128px;
+  width: 256px; object-fit: contain;
+}
+
+.container .date {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 8px);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.container.left .date {
+  right: -235px;
+}
+
+.container.right .date {
+  left: -235px;
+}
+
+.container .icon {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 9px 0;
+  top: calc(50% - 20px);
+  background: var(--timelineBox);
+  border: 2px solid var(--primaryDark);
+  border-radius: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: var(--primaryDark);
+  z-index: 1;
+}
+
+.container.left .icon {
+  right: 56px;
+}
+
+.container.right .icon {
+  left: 56px;
+}
+
+
+
+.container .content {
+  padding: 30px 90px 30px 30px;
+  background: var(--timelineBox);
+  position: relative;
+
+}
+
+.container.right .content {
+  padding: 30px 30px 30px 90px;
+
+}
+
+.container .content h2 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: var(--primaryDark);
+}
+
+.container .content p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.content p{
+  text-justify: inter-word;
+  text-align: justify;
+  font-size: small !important;
+}
+
+@media (max-width: 767.98px) {
+  .timeline::after {
+    left: 90px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 30px;
+  }
+
+  .container.right {
+    left: 0%;
+  }
+
+  .container.left::after, 
+  .container.right::after {
+    left: 82px;
+  }
+
+  .container.left::before,
+  .container.right::before {
+    left: 100px;
+    border-color: transparent var(--primaryDark) transparent transparent;
+  }
+
+  .container.left .date,
+  .container.right .date {
+    right: auto;
+    left: 15px;
+  }
+
+  .container.left .icon,
+  .container.right .icon {
+    right: auto;
+    left: 146px;
+  }
+
+  .container.left .content,
+  .container.right .content {
+    padding: 30px 30px 30px 90px;
+
+  }
+}
+
+
+@media screen and (max-width: 860px)
+{
+    .companyLogo{
+      padding: 0;
+      width: 128px;
+      height: 64px;
+    }
+} 
+
+@media screen and (max-width: 600px)
+{
+  .content p{
+    text-justify: inter-word;
+    text-align: justify;
+    font-size: 0.8rem !important;
+  }
+
+  .content h2{
+    font-size: small !important;
+
+
+  }
+
+
+
+}
+
+
+@media screen and (max-width: 770px)
+{
+  .date{
+    transform: rotate(-90deg);
+    margin-left: -22px;
+    font-size: small !important;
+  }
+  
+}
+

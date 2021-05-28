@@ -1,352 +1,674 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-171501103-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
- <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171501103-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      gtag("config", "UA-171501103-1");
+    </script>
 
-  gtag('config', 'UA-171501103-1');
-</script>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
- 
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>dikamjit borah</title>
-   <meta name="google-site-verification" content="Ryvo2zq4yyN-bBYkxBWViPa2AWeHToeFcBqY3-_9ijA" />
-  <meta content="personal portfolio" name="descriptions">
-  <meta content="dikamjit, borah, dikam, hobarb" name="keywords">
-  <meta name="author" content="Dikamjit Borah">
-
-  <link href="assets/img/logo.jpg" rel="icon">
- 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
-
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-
-  <style type="text/css">
-     @font-face { font-family: Timeline; src: url('Timeline.ttf'); } 
-
-     .navbar-nav.navbar-center { 
-            position: absolute; 
-            left: 50%; 
-            transform: translatex(-50%); 
-        } 
+    <title>dikamjit borah</title>
+    <meta
+      name="google-site-verification"
+      content="Ryvo2zq4yyN-bBYkxBWViPa2AWeHToeFcBqY3-_9ijA"
+    />
+    <meta content="personal portfolio" name="descriptions" />
+    <meta content="dikamjit, borah, dikam, hobarb" name="keywords" />
+    <meta name="author" content="Dikamjit Borah" />
+       
+    <link href="assets/img/logo.jpg" rel="icon" />
+    <link href="assets/css/index.css" rel="stylesheet" />
+    <link href="assets/css/skill_table.css" rel="stylesheet" />
+    <link href="assets/css/timeline.css" rel="stylesheet" />
+    <link href="assets/css/contact_form.css" rel="stylesheet" />
+    <link href="assets/css/carousel.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/c13215e777.js" crossorigin="anonymous"></script>
+    <style>
+      #loader {
+          border: 12px solid #f3f3f3;
+          border-radius: 50%;
+          border-top: 12px solid #444444;
+          width: 70px;
+          height: 70px;
+          animation: spin 1s linear infinite;
+      }
+        
+      @keyframes spin {
+          100% {
+              transform: rotate(360deg);
+          }
+      }
+        
+      .center {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+      }
   </style>
 
 </head>
- 
 
-<body style="background: linear-gradient(to bottom, #33ccff 0%, #66ff99 100%); background-color: rgba(39, 37, 34, 0.8);">
+  <body>
+    <div id="loader" class="center"></div>
+    <div class="navBar">
+      <div class="left">
+        <a href="#">Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+      </div>
 
-  <h1 style="font-family: Timeline; text-align: center; background-color: rgba(39, 37, 34, 0.8); margin-bottom: auto; padding: 2%; "> <a href="index.html" style="color: blanchedalmond;">HOBARB</a></h1>
- 
-  <hr style=" margin: auto;">
-
-  <section id="mainmain">
-    <header class="text-gray-700 body-font">
- 
-
-      <nav class="navbar navbar-expand-lg navbar-light bg-light" >
-       
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Software Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.instagram.com/hobarb_">Photography</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contactme">Contact me</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
+      <div class="right">
+        <a href="#contact-me"><div class = "button1">Get in touch now!</div></a>
+      </div>
     </div>
-     <div align="Center" style="margin: 3%;" >
-      <div align="Center" class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="dikamjit-borah-4ba65314b"><a class="LI-simple-link" href='https://in.linkedin.com/in/dikamjit-borah-4ba65314b?trk=profile-badge'>Dikamjit Borah</a></div>
-  
-    <p></p>
-        <p>My primary interest is mobile application development(Java/Kotlin). Besides that, I am proficient in web scraping and automation(Python, Selenium), and web development(Express, Node.js, React). Take a look at my <a style="color: #00b0ff;" href="#projects">projects</a></p><p>or</p>
+    <div class="body-about">
+      <div class="about-left" style="padding-left: 5%;">
+        <p>
+          <p><h5>Hi, I am</h5> <h2><span class="about-name">Dikamjit Borah</span></h2></p>
+          <br>
+         
+         <h4> I am a Full-Stack Engineer</h4>  <hr>
+
        
-        <p> <button type="button" onclick="myFunction()" class="btn btn-primary" style="margin: 0; position: absolute; left: 50%; -ms-transform: translate(-50%, -50%);transform: translate(-50%, -50%); margin-top: 24px;">View my resume</button></p>
-        <p align="center" style="margin-top:80px"><iframe src="https://giphy.com/embed/j5my9yn7arjsgoib12" width="120" height="120" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></p>
-      <p>Scroll down ⤵️</p>
-      <script>
-        function myFunction(){
+          <h5 class="about-desc"
+            >My primary interest is <span class="about-highlight"> mobile application development </span>
+            <b>(Java/Kotlin)</b>. I also work on <span class="about-highlight">web development</span> projects <b>(Express, Node, React)</b>. Besides that, I am proficient
+            in <span class="about-highlight">web scraping </span>and <span class="about-highlight">automation </span> <b>(Python, Beautiful Soup, Selenium)</b></h5
+          >
+          
+        </p>
+        <br>
       
-          window.location.href = "resume.pdf";
+        <hr>
         
-        }
-       
-      </script>
         
-      </div>
-      
-  </section>
+        <div class="social-media-btns">
+          
+          <div>
+            <a href="https://github.com/dikamjit-borah">
+              <button class="btn">
+                <i class="fa fa-github" style="font-size:18px;"></i>
+              </button>  
+            </a>
+            <a href="https://play.google.com/store/apps/developer?id=Dikamjit+Borah">
+              <button class="btn">
+                <i class="fab fa-google-play" style="font-size:18px;"></i>
+              </button>
+            </a>
 
-  
-  <main id="main">
+            <a href="https://www.instagram.com/hobarb_/">
+              <button class="btn">
+                <i class="fa fa-instagram" style="font-size:18px;"></i>
+              </button>
+            </a>
+            <a href="https://www.facebook.com/kadim.hobar">
+              <button class="btn">
+                <i class="fa fa-facebook" style="font-size:18px;"></i>
+              </button>
+            </a>
+            <a href="https://twitter.com/Hobarb1">
+              <button class="btn">
+                <i class="fa fa-twitter" style="font-size:18px;"></i>
+              </button>
+            </a>
 
-    <section id="projects" class="projects">
-      <div class="container">
-        <div class="section-title">
-          <h2> <span style="color: #009688; font-family: Poppins, sans-serif;">Projects</span></h2>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box" style="height: 100%">
-              
-              <h4>Costtler</h4>
-              <p>An intuitive daily expense tracker </p>
-              <br>
-              <p class="languages">Java, Firebase Realtime Database</p>
-               <p><a href="https://play.google.com/store/apps/details?id=com.hobarb.costtler" style="color: #00b0ff">Download</a></p>
-
-
-            </div>
-          </div>
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box" style="height: 100%">
-              
-
-              <h4>GiitJobs</h4>
-              <p>View developer jobs from around the world</p>
-              <br>
-              <p class="languages">Java, GitHub Jobs API, Retrofit</p>
-               <p><a href="https://play.google.com/store/apps/details?id=com.dikamjitborah.hobarb.gijobs" style="color: #00b0ff">Download</a></p>
-
-            </div>
-          </div>
-
-      
-
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box" style="height: 100%">
-              
-              <h4>ThoughtBook</h4>
-              <p>Scribble down your thoughts, notes, doodles and share them with the world</p>
-              <br>
-              <p class="languages">Java, Firebase Auth, Firebase Firestore</p>
-               <p><a href="https://play.google.com/store/apps/details?id=com.hobarb.fictional_spoon" style="color: #00b0ff">Download</a></p>
-
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-     
-      </section>
-
-    <section id="projects" class="projects">
-      <div class="container">
-      
-
-        <div class="row">
-
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box" style="height: 100%">
-              
-              <h4>Desperate Damjo</h4>
-              <p>Eat instagram likes and score points </p>
-              <br>
-              <p class="languages">Java</p>
-               <p><a href="https://play.google.com/store/apps/details?id=com.dikamjitborah.hobarb.deperatedamjo2" style="color: #00b0ff">Download</a></p>
-
-
-            </div>
-          </div>
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box" style="height: 100%">
-              
-
-              <h4>Supreme QR Scanner</h4>
-              <p>View what a QR code contains before visiting it's site, and save it to history </p>
-              <br>
-              <p class="languages">Java, ZXing library</p>
-               <p><a href="https://play.google.com/store/apps/details?id=com.hobarb.supremeqrscanner" style="color: #00b0ff">Download</a></p>
-
-            </div>
-          </div>
-
-      
-
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box" style="height: 100%">
-
-              <h4>Amechania</h4>
-              <p>SOS application to send texts with your location to your emergency contacts and place phone calls</p>
-              <br>
-              <p class="languages">Java, Android Studio</p>
-
-               <p><a href="https://drive.google.com/drive/folders/1qjBOpYboRyx_bv47N5G6oggoFAhjV_pP?usp=sharing" style="color: #00b0ff">Download</a></p>
            
-              
+           
+        </div>
+        </div>
+        <br>
+
+        <div class="view-btns" style="width: 100%; display: flex;"> 
+          <a href="assets/docs/Dikamjit's Resume.pdf"><div class = "button1" style="width:19rem; text-align: center;" >Download Resume</div></a>
+          <a href="#portfolio"><div class = "button2" style="width:19rem; text-align: center; margin-left: 1.6rem; color: white;background-color: var(--primaryDark); border-color: white;"  >View Projects</div></a>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="dikamjit-borah" data-version="v1"></div>
+      </div>
+    </div>
+
+    <section id="portfolio">
+      <h1 class="section-title" style="float: right;"><i class="fa fa-briefcase" style="margin-right: 1rem;"></i>My Projects</h1>
+      <hr>
+      <div class="portfolio-row">
+
+        <div class="row-item">
+          <img src="assets/img/projects/sountry.png">
+          <h3 class="row-title">Sountry</h3>
+          <div class="tech-used">
+            <img src="assets/icons/as.png">
+            <img src="assets/icons/nodejs.png">
+            <img src="assets/icons/Expressjs.png">
+            <img src="assets/icons/mysql.png">
+            <img src="assets/icons/heroku.png">
+            <img src="assets/icons/playstore.png">
+      
+          </div>
+          <hr>
+          <h5 class="row-desc">A one-in-all integrated social media platform for musicians to connect with one another. Musicians can swipe through their feed to discover users who have uploaded their music covers in similar genres. Upon connecting they can chat with one another. Users can upload requirements and queries related to music through a common forum page.
+          </h5>
+          <br>
+          <a href="assets/apks/sountry.apk" download="Sountry">  <button class = "button1 live">Download</button></a>
+          <button class = "button2 codebase" onclick="window.location.href='https://github.com/dikamjit-borah/Sountry'">Documentation</button>
+          
+        </div>
+
+        <div class="row-item">
+          <img src="assets/img/projects/buddalert.png">
+          <h3 class="row-title">BuddAlert</h3>
+          <div class="tech-used">
+            <img src="assets/icons/as.png">
+            <img src="assets/icons/firebase.png">
+            <img src="assets/icons/google-places.png">
+            <img src="assets/icons/playstore.png">
+         
+          </div>
+          <hr>
+        
+          <h5 class="row-desc">An android application to set location-based alarms and reminders. Users can set their desired location and the app will notify them when they reach their destination. Users also have the option of notifying some contacts about their current location after some interval. BuddAlert also serves as a reminder application, in the sense that users can set location based reminders and the application will remind them either on the day or when they are in the proximity of the location.</h5>
+          <br>
+          <a href="assets/apks/buddalert.apk" download="BuddAlert"><button class = "button1 live" >Download</button></a>
+          <button class = "button2 codebase" onclick="window.location.href='https://github.com/dikamjit-borah/LocataDora'">Documentation</button>
+          
+        </div>
+        <div class="row-item">
+          <img src="assets/img/projects/scholine.png">
+          
+          <h3 class="">Scholine Plus</h3>
+          <div class="tech-used">
+            <img src="assets/icons/nodejs.png">
+            <img src="assets/icons/Expressjs.png">
+            <img src="assets/icons/react.png">
+            <img src="assets/icons/mysql.png">
+            <img src="assets/icons/netlify.png">
+            <img src="assets/icons/heroku.png">
+      
+          </div>
+          <hr>
+ 
+          <h5 class="row-desc">A web-based student management system that is being used by a reputed school in Assam to track and manage student records. Users can create and view students and student records, update their attendances, and record adminssion and monthly payments.  </h5>
+          <br>
+          <button class = "button1 live" onclick="window.location.href='https://scholine-plus.netlify.app'">View Live</button>
+          <button class = "button2 codebase" onclick="window.location.href='https://github.com/dikamjit-borah/Scholine-backend'">Documentation</button>
+          
+        </div>
+
+        <div class="row-item">
+          <img src="https://cdn2.iconfinder.com/data/icons/file-extensions-17/63/404-2-512.png">
+          <h3 class="row-title">Courierpad</h3>
+          <div class="tech-used">
+            <img src="assets/icons/as.png">
+            <img src="assets/icons/nodejs.png">
+            <img src="assets/icons/Expressjs.png">
+            <img src="assets/icons/mysql.png">
+            <img src="assets/icons/heroku.png">
+            <img src="assets/icons/playstore.png">
+         
+          </div>
+          <hr>
+ 
+          <h5 class="row-desc">A business facing android application to track and manage courier deliveries. Admins can add orders and delivery agents to the database. For an order, the admin can select from a list of available delivery agents. Agents also has their separate dashboard where they can see a list of the orders that they have completed. </h5>
+          <br>
+          <button class = "button1 live" >Download</button>
+          <button class = "button2 codebase" onclick="window.location.href='https://github.com/dikamjit-borah/courierpad-backend'">Documentation</button>
+          
+        </div>
+
+        <div class="row-item">
+          <img src="assets/img/projects/imminear.png">
+          <h3 class="row-title">Imminear</h3>
+          <div class="tech-used">
+            <img src="assets/icons/as.png">
+            <img src="assets/icons/firebase.png">
+       
+      
+          </div>
+          <hr>
+ 
+          <h5 class="row-desc">This android application was built with the intention to alert users of possibly Corona positive persons nearby. When lockdown is lifted people from different states will be migrating to different states for their job or back to their hometown. People might be coming from states which has a high count of Corona infections. There might be a case that people travelling from such states might be a carrier. Hence these people will register as "Migrants" on the app. The other type of user referred as "Local" can sign in and see the number of "Migrants" nearby within a radius of 500 metres.</h5>
+          <br>
+         <a href="assets/apks/imminear.apk" download="Imminear"> <button class = "button1 live" >Download</button></a>
+          <button class = "button2 codebase" onclick="window.location.href='https://github.com/dikamjit-borah/imminear'">Documentation</button>
+          
+        </div>
+
+        <div class="row-item">
+          <img src="assets/img/projects/hotel.PNG">
+          <h3 class="row-title">Hostel Management System</h3>
+          <div class="tech-used">
+            <img src="assets/icons/html_css_js.png" style="width: 16rem !important" >
+            <img src="assets/icons/firebase.png">
+       
+      
+          </div>
+          <hr>
+ 
+          <h5 class="row-desc">Web application for a hotel to create, book and update customer and room details. Built with HTML5, CSS3, and vanilla Javascript, with Firebase for backend.</h5>
+          <br>
+          <button class = "button1 live" onclick="window.location.href='https://dikamjit-borah.github.io/Hotel-Royale/'">View Live</button>
+          <button class = "button2 codebase" onclick="window.location.href='https://github.com/dikamjit-borah/hotel-royale'">Documentation</button>
+          
+        </div>
+
+        </div>
+        <div style=" display: flex; justify-content: center; align-items: center;"><h2 style="color: #f3f3f3; margin: 2rem 3rem;">Minor Projects</h2> <hr></div>
+        <div class="portfolio-row">
+          <div class="row-item-another" onclick="window.location.href='https://play.google.com/store/apps/details?id=com.hobarb.costtler'">
+              <h3>Costtler</h3>
+              <h5>An intuitive expense recorder android app to keep track of daily expenses</h5>
+              <div class="tech-used">
+                <img src="assets/icons/as.png">
+                <img src="assets/icons/firebase.png">
+                <img src="assets/icons/playstore.png">
+              </div>
+          </div>
+          <div class="row-item-another" onclick="window.location.href='https://play.google.com/store/apps/details?id=com.hobarb.fictional_spoon'">
+            <h3>ThoughtBook</h3>
+            <h5>Social media app to share thoughts and doodles</h5>
+            <div class="tech-used">
+              <img src="assets/icons/as.png">
+              <img src="assets/icons/firebase.png">
+              <img src="assets/icons/playstore.png">
+            </div>
+
+          </div>
+
+          
+          <div class="row-item-another" onclick="window.location.href='https://play.google.com/store/apps/details?id=com.dikamjitborah.hobarb.gijobs'">
+            <h3>GiitJobs</h3>
+            <h5>Android app to search and view developer jobs from around the world</h5>
+            <div class="tech-used">
+              <img src="assets/icons/as.png">
+            </div>
+          </div>
+
+          <div class="row-item-another" onclick="window.location.href='https://play.google.com/store/apps/details?id=com.dikamjitborah.hobarb.deperatedamjo2'">
+            <h3>Desperate Damjo</h3>
+            <h5>A 2D android platform game to collect points by eating "likes" and "follows"</h5>
+            <div class="tech-used">
+              <img src="assets/icons/as.png">
+              <img src="assets/icons/playstore.png">
              
             </div>
           </div>
 
+          <div class="row-item-another" onclick="window.location.href='https://github.com/dikamjit-borah/InstaComm'">
+            <h3>InstaComm</h3>
+            <h5>Generate a file of your instagram followers and followings for easy readability</h5>
+            <div class="tech-used">
+              <img src="assets/icons/python.png">
+              <img src="assets/icons/selenium.png">
+              <img src="assets/icons/bs4.png">
+            </div>
+          </div>
+          <div class="row-item-another" onclick="window.location.href='https://github.com/dikamjit-borah/FilmFiller'">
+            <h3>FilmFiller</h3>
+            <h5>Scrape details of your favorite movie and construct a review book in a CSV</h5>
+            <div class="tech-used">
+              <img src="assets/icons/python.png">
+              <img src="assets/icons/bs4.png">
+            </div>
+          </div>
+         
+
+          <div class="row-item-another" onclick="window.location.href='https://github.com/dikamjit-borah/COVID-Notifier'">
+            <h3>COVID-19 Notifier</h3>
+            <h5>Get latest statistics for COVID-19 from trusted sources and tweets</h5>
+            <div class="tech-used">
+              <img src="assets/icons/python.png">
+              <img src="assets/icons/selenium.png">
+              <img src="assets/icons/bs4.png">
+            </div>
+          </div>
         </div>
 
+    </section>
+
+    <section id="skills">
+      <h1 class="section-title"><i class="fa fa-code" style="margin-right: 1rem;"></i>My Skills</h1>
+      <hr>
+      <div class="body-skills">
+
+       <div class="skills-left">
+
+
+        <img src="assets/icons/c++.png">
+        <img src="assets/icons/java.png">
+        <img src="assets/icons/kotlin.png">
+        <img src="assets/icons/python.png">
+        <img src="assets/icons/as.png">
+        <img src="assets/icons/html_css_js.png">
+        <img src="assets/icons/nodejs.png">
+        <img src="assets/icons/Expressjs.png">
+        <img src="assets/icons/react.png">
+        <img src="assets/icons/selenium.png">
+        <img src="assets/icons/flask.png">
+        <img src="assets/icons/processing.png">
+        <img src="assets/icons/pandas.png">
+        <img src="assets/icons/bs4.png">
+        <img src="assets/icons/rest.png">
+        <img src="assets/icons/firebase.png">
+        <img src="assets/icons/mongodb.png">
+        <img src="assets/icons/mysql.png">
+        <img src="assets/icons/netlify.png">
+        <img src="assets/icons/heroku.png">
+        <img src="assets/icons/playstore.png">
+        <img src="assets/icons/postman.png">
+        <img src="assets/icons/git.png">
+        <img src="assets/icons/github.png">
+
+       </div>
+
+       
+       <div class="skills-right">
+          <table>
+            <thead>
+ 
+            </thead>
+            <tbody>
+              <tr>
+                <td><u>Programming Languages</u></td>
+                <td>C, C++, Java, JavaScript, Kotlin, Python</td>             
+              </tr>
+              <tr>
+                <td><u>Web</u></td>
+                <td>Express, Flask, Node, React</td>             
+              </tr>
+              <tr>
+                <td><u>Databases</u></td>
+                <td>MongoDB, MySQL, Oracle 11g</td>             
+              </tr>
+              <tr>
+                <td><u>Tools</u></td>
+                <td> Anaconda, Android Studio, Firebase, Glide, Processing, Retrofit
+                </td>             
+              </tr>
+              <tr>
+                <td><u>Version Control</u></td>
+                <td>Git, GitHub, GitLab, SourceTree
+                </td>             
+              </tr>
+              <tr>
+                <td><u>Automation and Testing</u></td>
+                <td>Beautiful Soup, Charles, Postman, Selenium
+                </td>             
+              </tr>
+              <tr>
+                <td><u>Others</u></td>
+                <td>Spark AR Studio, Adobe Suite
+                </td>             
+              </tr>       
+            </tbody>
+         
+          </table>
       </div>
-     
-      </section>
 
-    <section id="projects" class="projects">
-      <div class="container">
-        <div class="section-title">
-          
-        </div>
 
-        <div class="row">
-
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box" style="height: 100%;">
-              
-              <h4>COVID-19 Notifier</h4>
-              <p>Get notifications of latest news and kill count for COVID-19 from trusted sources and Dr. Himanta Biswa Sarma's tweets</p>
-              <br>
-              <p class="languages">Python, Beautiful Soup</p>
-              <p><a href="https://github.com/hunkyxstudman/COVID-Notifier" style="color: #00b0ff">View code</a></p>
-
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box" style="height: 100%">
-              <h4>InstaComm</h4>
-              <p>Find mutual followers and following of a profile; also get a list of your unfollowers and unlikers! </p>
-              <br>
-              <p class="languages">Python, Beautiful Soup, Selenium</p>
-               <p><a href="https://github.com/hunkyxstudman/InstaComm" style="color: #00b0ff">View code</a></p>
-
-              
-              </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box" style="height: 100%">
-              
-              <h4>FilmFiller</h4>
-              <p>An application to obtain details of your favorite movie and constructs a review book </p>
-              <br>
-              <p class="languages">Python, Beautiful Soup</p>
-               <p><a href="https://github.com/hunkyxstudman/FilmFiller" style="color: #00b0ff">View code</a></p>
+       
         
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-      <br>
-      <h1 align = "center"> <span style="color: #00251a; font-family: Poppins, sans-serif; font-weight: bold;"><a href="https://www.github.com/hunkyxstudman" >VIEW MORE -></a></span></h1> 
-     
-      </section>
-      
-   
-   
-
-
-  </main><!-- End #main -->
-
-  <section id="contactme"> 
-    <section class="text-gray-700 body-font relative">
-      <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-col text-center w-full mb-12">
-          <h2> <span style="color: #009688; font-family: Poppins, sans-serif; font-size: 28px; font-weight: 700;">Contact me!</span></h2>
-          <br>
-          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Drop me a ಠ_ಠ at <span style="color:crimson;">+91 70029 36200</span> or email me!</p>
-        </div>
-        <div class="lg:w-1/2 md:w-2/3 mx-auto">
-          <form action="https://formspree.io/moqkkarz" method="POST">
-          <div class="flex flex-wrap -m-2">
-            
-            <div class="p-2 w-1/2">
-              <input class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="Name" type="text" name="name">
-            </div>
-            <div class="p-2 w-1/2">
-              <input class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="Email" type="email" name="_replyto"> 
-            </div>
-            <div class="p-2 w-full">
-              <textarea class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none h-48 focus:border-indigo-500 text-base px-4 py-2 resize-none block" placeholder="Message" name="message"></textarea>
-            </div>
-            <div class="p-2 w-full">
-              <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Send mail! </button></button>
-            </div>
-        
-            <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-              
-              <br><br> <br><br> <br><br>
-             <p>Developed with ❤️ by Hobarb, 2020!</p> 
-            </div>
-          </form>
-          </div>
-        </div>
       </div>
     </section>
-    
+
+
+    <section id="experience">
+      <h1 class="section-title" style=" float: right;"><i class="fa fa-tags" style="margin-right: 1rem;"></i>My Experience</h1>
+      <hr>
+     
+      <div class="timeline" class="timeline-wrapper">
+        <div class="container left">
+          <div class="date">JAN 2021 - PRESENT</div>
+          <i class="icon fa fa"></i>
+          <div class="content">
+            <div style="text-align: center;">
+              <img class="companyLogo" src="assets/img/digicenter.png">
+            </div>
+            <h5 style="color: purple !important;">Full-Stack Developer</h5>
+            <h2><a href="#">Digicenter Assam</a></h2>
+            <p>
+              Responsible for handling client applications, building reusable and sleek ui components with React, developing clean and scalable APIs using Node and Express, integrating frontend, backend and mobile applications.
+            </p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="date">NOV 2020 - MAR 2021</div>
+          <i class="icon fa fa"></i>
+          <div class="content">
+            <div style="text-align: center;">
+              <img class="companyLogo" src="assets/img/edudigm.jpg">
+            </div>
+            <h5 style="color: purple !important;">Junior Android Developer</h5>
+            <h2><a href="#">Edudigm Education</a></h2>
+            <p>
+              Worked closely with the technical and design teams to build a brand new android based education platform using MVP pattern  with efficiently structured and scalable code..
+
+            </p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="date">NOV 2020 - FEB 2021</div>
+          <i class="icon fa fa"></i>
+          <div class="content">
+            <div style="text-align: center;">
+              <img class="companyLogo" src="assets/img/codekick.png">
+            </div>
+            <h5 style="color: purple !important;">Python Content Development</h5>
+            <h2><a href="#">CodeKick.in</a></h2>
+            <p>
+              Assisted in creating a python curriculum for students from beginner to advanced levels. Developed various modules, lesson plans and projects ranging from small scripts to medium-scale applications. 
+            </p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="date">JUL 2020 - OCT 2020</div>
+          <i class="icon fa fa"></i>
+          <div class="content">
+            <div style="text-align: center;">
+              <img class="companyLogo" src="assets/img/nullclass.png">
+            </div>
+            <h5 style="color: purple !important;">Android Technical Support</h5>
+            <h2><a href="#">Nullclass</a></h2>
+            <p>
+              Provided prompt support to resolve queries and assisted members in developing, testing, debugging and deploying various android applications. 
+            </p>
+          </div>
+        </div>
+        <div class="container left">
+
+          <div class="date">APR 2020 - JUL 2020</div>
+          <i class="icon fa fa"></i>
+          <div class="content">
+            <div style="text-align: center;">
+              <img class="companyLogo" src="assets/img/visionmagitech.png">
+            </div>
+            <h5 style="color: purple !important;">Android Developer Intern </h5>
+            <h2><a href="#">Vision Magitech</a></h2>
+            <p>
+              Developed a variety of android applications from scratch and implemented integral features in existing applications with highly efficient and robust code.
+            </p>
+          </div>
+          
+        </div>
+        <div class="container right">
+
+          <div class="date">JUN 2019 - AUG 2019</div>
+          <i class="icon fa fa"></i>
+          <div class="content">
+            <div style="text-align: center;">
+              <img class="companyLogo" src="assets/img/apdcl.png">
+            </div>
+            <h5 style="color: purple !important;">Summer Intern </h5>
+            
+            <h2><a href="#">Assam Power Distribution Company Ltd</a></h2>
+            <p>
+              Built an Employee administration system for convenient management of members of an organisation          </p>
+          </div>
+         
+        </div>
+        <div class="container left">
+          <div class="date">JUN 2018 - AUG 2018</div>
+          <i class="icon fa fa"></i>
+          <div class="content">
+            <div style="text-align: center;">
+              <img class="companyLogo" src="assets/img/nefr.png">
+            </div>
+            <h5 style="color: purple !important;">Summer Intern </h5>
+            <h2><a>North East Frontier Railway</a></h2>
+            <p>
+              Worked as a team lead to build an android application to ease parking in busy lots by generating QR code and bill based on duration of stay of vehicle
+            </p>
+          </div>
+         
+        </div>
+      </div>
   </section>
 
-  <!-- ======= Footer ======= -->
-  
-  <footer id="footer">
+  <section id="contact-me">
+    <h1 class="section-title"><i class="fa fa-address-card" style="margin-right: 1rem;"></i>Let's connect!</h1>
+      <hr>
+      
+    <div class="container-form">
     
-    <div class="container">
-      <div class="social-links">
-        
-        <a href="https://twitter.com/hobarb1" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="https://www.facebook.com/kadim.hobar" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="https://www.instagram.com/hobarb_" class="instagram"><i class="bx bxl-instagram"></i></a>
+      <div class="wrapper">
     
-        
+        <!-- COMPANY INFORMATION -->
+        <div class="company-info">
+    
+          <ul>
+            <li><h5><i class="fa fa-map-marker" style="margin: 1rem;"></i>Guwahati</h5></li>
+            <li><h5><i class="fa fa-phone" style="margin: 1rem;"></i> 7002936200</h5></li>
+            <li><h5><i class="fa fa-envelope" style="margin: 1rem;"></i> dikamjitborah2021@gmail.com</h5></li>
+          </ul>
+        </div>
+   
+    
+        <div class="contact">
+          <form id="contact-form"
+          action="https://formspree.io/f/mzbyrrbw"
+  method="POST">
+    
+            <p>
+              <label>Name</label>
+              <input type="text" name="name" id="name" required>
+            </p>
+    
+            <p>
+              <label>Company</label>
+              <input type="text" name="company" id="company">
+            </p>
+    
+            <p>
+              <label>E-mail Address</label>
+              <input type="email" name="email" id="email" required>
+            </p>
+    
+            <p>
+              <label>Phone Number</label>
+              <input type="text" name="phone" id="phone">
+            </p>
+    
+            <p class="full">
+              <label>Message</label>
+              <textarea name="message" rows="5" id="message"></textarea>
+            </p>
+    
+            <p class="full">
+              <button type="submit">Submit</button>
+            </p>
+    
+          </form>
+        </div>
+      
+    
       </div>
 
     </div>
+    <div class="social-media-btns"  style="text-align: center;">
+          
+      <div>
+        <a href="https://github.com/dikamjit-borah">
+        <button class="btn" style="width: 72px;
+        height: 72px;">
+          <i class="fa fa-github" style="font-size:42px;"></i>
+        </button></a>
 
-    
-  </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+        <a href="https://play.google.com/store/apps/developer?id=Dikamjit+Borah">
+          <button class="btn" style="width: 72px;
+          height: 72px;">
+            <i class="fab fa-google-play" style="font-size:42px;"></i>
+          </button></a>
+        </a>
 
-  <!-- Vendor JS Files -->
-  
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script type="text/Javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+        <a href="https://www.instagram.com/hobarb_">
+        <button class="btn" style="width: 72px;
+        height: 72px;">
+          <i class="fa fa-instagram" style="font-size:42px;"></i>
+        </button></a>
 
-</body>
+        <a href="https://www.facebook.com/kadim.hobar">
+        <button class="btn" style="width: 72px;
+        height: 72px;">
+          <i class="fa fa-facebook" style="font-size:42px;"></i>
+        </button></a>
+      
+        <a href="https://twitter.com/hobarb1">
+        <button class="btn" style="width: 72px;
+        height: 72px;">
+          <i class="fa fa-twitter" style="font-size:42px;"></i>
+        </button></a>
+     
+    </div>
+    </div>
+  </section>
+ 
+ 
 
+      
+      
+  </body>
+  <script>
+    document.onreadystatechange = function() {
+        if (document.readyState !== "complete") {
+
+          window.addEventListener('online', () => {
+            document.querySelector(
+              "body").style.visibility = "hidden";
+            document.querySelector(
+              "#loader").style.visibility = "visible";
+          });
+
+          window.addEventListener('offline', () => {
+            document.querySelector(
+              "#loader").style.display = "none";
+            document.querySelector(
+              "body").style.visibility = "visible";
+          });
+            
+        } else {
+            document.querySelector(
+              "#loader").style.display = "none";
+            document.querySelector(
+              "body").style.visibility = "visible";
+        }
+    };
+</script>
+  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 </html>
