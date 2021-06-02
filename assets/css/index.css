@@ -495,7 +495,24 @@ background: linear-gradient(153deg, rgba(170,7,107,0.5) 0%, rgba(170,7,107,1) 10
 
   .view-btns{
     justify-content: center;
+    align-items: center;
     font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+  }
+  #btn-projects {
+    margin-left: 0px !important;
+    margin-top: 4px !important;
+  }
+  .btn{
+    width: 22px;
+  height: 22px;
+  
+
+  }
+
+  .fa, .fab{
+    font-size:10px !important;
   }
 
   .social-media-btns{
