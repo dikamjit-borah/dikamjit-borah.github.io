@@ -229,6 +229,7 @@ body {
     font-size: 0.8rem !important;
   }
 
+
   .content h2{
     font-size: small !important;
 
@@ -248,5 +249,44 @@ body {
     font-size: small !important;
   }
   
+}
+
+@media screen and (max-width: 450px){
+  .container {
+    width: 100%;
+    padding: 0;
+   
+  }
+
+  .timeline{
+    padding: 15px;
+  }
+
+  .container.left .date, .container.right .date {
+    right: auto;
+    left: -47px;
+}
+
+  .container.left .content,
+  .container.right .content {
+    padding: 3px 3px 3px 3px;
+    margin: 2px;
+
+  }
+  .container .icon {
+    display: none;
+  }
+  .container::before{
+    display: none;
+  }
+  .container::after{
+    display: none;
+  }
+  .timeline::after{
+    display: none;
+  }
+  .date{
+    font-size: 10px !important;
+  }
 }
 

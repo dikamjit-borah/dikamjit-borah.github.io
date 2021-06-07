@@ -83,7 +83,7 @@ h5 {
 }
 
 .navBar > * {
-  margin: 2rem 3rem;
+  margin: 1rem 2rem;
 
   padding: 0.2rem;
   display: flex;
@@ -159,7 +159,7 @@ h5 {
     var(--primaryDark) 100%
   ) !important;
   display: flex;
-  margin: 2rem 3rem;
+  margin: 1rem 2rem;
 
   border-radius: var(--borderRadius);
   flex-wrap: wrap;
@@ -196,7 +196,7 @@ h5 {
   justify-content: center;
 
   flex-direction: column;
-  min-width: 280px;
+  min-width: 250px;
 }
 
 .about-left h5 {
@@ -228,6 +228,9 @@ h5 {
   justify-content: center;
   align-items: center;
   align-content: center;
+  padding: 0 !important;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
 }
 
 .about-highlight {
@@ -264,7 +267,7 @@ hr {
   background: rgb(110,4,109);
 background: linear-gradient(317deg, rgba(110,4,109,1) 0%, rgba(170,7,107,1) 100%);
  
-  margin: 2rem 3rem;
+  margin: 1rem 2rem;
 
   border-radius: var(--borderRadius);
   
@@ -303,7 +306,7 @@ background: linear-gradient(317deg, rgba(110,4,109,1) 0%, rgba(170,7,107,1) 100%
 .row-item>img{
 
   object-fit: contain;
-  height: 25rem;
+  height: 315px;
   width: 100%;
 }
 
@@ -368,7 +371,7 @@ text-decoration: underline;
   
   
 
-  margin: 2rem 3rem;
+  margin: 1rem 2rem;
 
   border-radius: var(--borderRadius);
   
@@ -387,7 +390,7 @@ text-decoration: underline;
   background: rgb(110,4,109);
   background: linear-gradient(153deg, rgba(110,4,109,1) 0%, rgba(170,7,107,1) 100%);
 
-  margin: 2rem 3rem;
+  margin: 1rem 2rem;
   border-radius: var(--borderRadius);
   min-height: 80vh;
 
@@ -462,7 +465,7 @@ text-decoration: underline;
   background: rgb(110,4,109);
 background: linear-gradient(153deg, rgba(170,7,107,0.5) 0%, rgba(170,7,107,1) 100%);
 
-  margin: 2rem 3rem;
+  margin: 1rem 2rem;
 
   border-radius: var(--borderRadius);
   min-height: 80vh;
@@ -503,8 +506,8 @@ background: linear-gradient(153deg, rgba(170,7,107,0.5) 0%, rgba(170,7,107,1) 10
   }
 
   .tech-used>img{
-    width: 32px;
-    height: 32px;
+    width: 22px;
+    height: 22px;
     
     object-fit: contain;
     
@@ -549,6 +552,12 @@ background: linear-gradient(153deg, rgba(170,7,107,0.5) 0%, rgba(170,7,107,1) 10
 
   .row-item-another{
     min-height: 7rem;
+  }
+
+  .section-title{
+    font-size: large !important;
+    float: none;
+    text-align: center;
   }
 }
 
