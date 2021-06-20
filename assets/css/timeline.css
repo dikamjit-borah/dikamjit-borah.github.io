@@ -264,7 +264,7 @@ body {
 
   .container.left .date, .container.right .date {
     right: auto;
-    left: -47px;
+    left: -34px;
 }
 
   .container.left .content,
@@ -286,7 +286,7 @@ body {
     display: none;
   }
   .date{
-    font-size: 10px !important;
+    font-size: 8px !important;
   }
 }
 
