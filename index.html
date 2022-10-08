@@ -79,9 +79,9 @@
 
        
           <h5 class="about-desc"
-            >My primary interest is <span class="about-highlight"> mobile application development </span>
-            <b>(Java/Kotlin)</b>. I also work on <span class="about-highlight">web development</span> projects <b>(Express, Node, React)</b>. Besides that, I am proficient
-            in <span class="about-highlight">web scraping </span>and <span class="about-highlight">automation </span> <b>(Python, Beautiful Soup, Selenium)</b></h5
+            >My primary interest is <span class="about-highlight">backend development</span> with
+            <b>Node.js</b> & <b>Express.js</b>. I am comfortable with both <span class="about-highlight">SQL</span> (<b>MySQL, PostGreSQL</b>) and <span class="about-highlight">NoSQL</span> (<b>Firebase Realtime Database, Cloud Firestore, MongoDB</b>) databases. I also work on <span class="about-highlight">android</span> projects using <b>Kotlin & Java</b>. Besides that, I am proficient
+            in <span class="about-highlight">web scraping </span>and <span class="about-highlight">automation </span> (<b>Python, Beautiful Soup, Selenium</b>)</h5
           >
           
         </p>
@@ -140,6 +140,33 @@
       <h1 class="section-title" style="float: right;"><i class="fa fa-briefcase" style="margin-right: 1rem;"></i>My Projects</h1>
       <hr>
       <div class="portfolio-row">
+
+        <div class="row-item">
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/E9ujpzp-ASM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <h3 class="row-title">Testato</h3>
+          <div class="tech-used">
+            <img src="assets/icons/as.png">
+            <img src="assets/icons/nodejs.png">
+            <img src="assets/icons/Expressjs.png">
+            <img src="assets/icons/mysql.png">
+            <img src="assets/icons/heroku.png">
+            <img src="assets/icons/algolia.png">
+            <img src="assets/icons/rmq.png">
+      
+          </div>
+          <hr>
+          <h5 class="row-desc">A microservice based application to search medicines by proximity in available pharmacies. It consists of 3 entities: Erp, Backend and Android app. The Erp layer (Node.js) runs a cron weekly to generate data from the csv files
+            contained within the pharmacy's local device and send it to the backend with
+            the help of RabbitMQ. The Backend (Nest.js) processes incoming data of the erp layer and updates
+            medicine data for respective pharmacies in the MySQL database
+            The App (Android) provides a search interface for end-users to search for
+            medicines and list nearby or all available pharmacies and directions
+          </h5>
+          <br>
+          <a href="assets/apks/testato.apk" download="Sountry">  <button class = "button1 live">Download</button></a>
+          <button class = "button2 codebase" onclick="window.location.href='https://github.com/dikamjit-borah/Testato-Backend'">Documentation</button>
+          
+        </div>
 
         <div class="row-item">
           <iframe width="100%" height="315" src="https://www.youtube.com/embed/8oxyzRDUzZ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -341,24 +368,22 @@
        <div class="skills-left">
 
 
-        <img src="assets/icons/c++.png">
-        <img src="assets/icons/java.png">
-        <img src="assets/icons/kotlin.png">
-        <img src="assets/icons/python.png">
-        <img src="assets/icons/as.png">
-        <img src="assets/icons/html_css_js.png">
         <img src="assets/icons/nodejs.png">
         <img src="assets/icons/Expressjs.png">
-        <img src="assets/icons/react.png">
-        <img src="assets/icons/selenium.png">
-        <img src="assets/icons/flask.png">
-        <img src="assets/icons/processing.png">
-        <img src="assets/icons/pandas.png">
-        <img src="assets/icons/bs4.png">
+        <img src="assets/icons/rmq.png">
+        <img src="assets/icons/algolia.png">
         <img src="assets/icons/rest.png">
         <img src="assets/icons/firebase.png">
-        <img src="assets/icons/mongodb.png">
         <img src="assets/icons/mysql.png">
+        <img src="assets/icons/java.png">
+        <img src="assets/icons/kotlin.png">
+        <img src="assets/icons/as.png">
+        <img src="assets/icons/c++.png">
+        <img src="assets/icons/html_css_js.png">
+        <img src="assets/icons/selenium.png">
+        <img src="assets/icons/processing.png">
+        <img src="assets/icons/bs4.png">
+        <img src="assets/icons/mongodb.png">
         <img src="assets/icons/postgresql.png">
         <img src="assets/icons/netlify.png">
         <img src="assets/icons/heroku.png">
@@ -378,11 +403,15 @@
             <tbody>
               <tr>
                 <td><u>Programming Languages</u></td>
-                <td>C, C++, Java, JavaScript, Kotlin, Python</td>             
+                <td>C, C++, Java, JavaScript, Kotlin</td>             
               </tr>
               <tr>
-                <td><u>Web</u></td>
-                <td>Express, Flask, Node, React</td>             
+                <td><u>Backend</u></td>
+                <td>Express.js, Nest.js, Node.js, RabbitMQ</td>             
+              </tr>
+              <tr>
+                <td><u>Android</u></td>
+                <td>Coroutines, Jetpack, Retrofit, Volley</td>             
               </tr>
               <tr>
                 <td><u>Databases</u></td>
@@ -390,7 +419,7 @@
               </tr>
               <tr>
                 <td><u>Tools</u></td>
-                <td> Anaconda, Android Studio, Firebase, Glide, Processing, Retrofit
+                <td>Algolia, Android Studio, Firebase, HTTP Toolkit, New Relic, Processing, Socket.IO 
                 </td>             
               </tr>
               <tr>
@@ -425,8 +454,24 @@
       <hr>
      
       <div class="timeline" class="timeline-wrapper">
+
+        <div class="container right">
+          <div class="date">JUL 2021 - SEP 2022</div>
+          <i class="icon fa fa"></i>
+          <div class="content">
+            <div style="text-align: center;">
+              <img class="companyLogo" src="assets/img/sp.jfif">
+            </div>
+            <h5 style="color: purple !important;">Software Developer</h5>
+            <h2><a href="https://www.superprocure.com/">SuperProcure</a></h2>
+            <p>
+              Work as part of a cross-functional team in developing different modules to simplify logistics and transportation management for B2B clients of the organisation
+            </p>
+          </div>
+        </div>
+
         <div class="container left">
-          <div class="date">JAN 2021 - PRESENT</div>
+          <div class="date">JAN 2021 - JUN 2021</div>
           <i class="icon fa fa"></i>
           <div class="content">
             <div style="text-align: center;">
