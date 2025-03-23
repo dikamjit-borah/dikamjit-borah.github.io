@@ -5,31 +5,14 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
     const formData = new FormData(this);
     const data = Object.fromEntries(formData);
     
-    // Here you would typically send the data to your backend
     console.log('Form submitted:', data);
     
     // Reset form
     this.reset();
     
-    // Show success message (you can style this better)
     alert('Message sent successfully!');
 });
 
-// Add custom cursor functionality
-const cursor = document.querySelector('.cursor');
-
-document.addEventListener('mousemove', (e) => {
-    cursor.style.left = e.clientX + 'px';
-    cursor.style.top = e.clientY + 'px';
-});
-
-document.addEventListener('mouseenter', () => {
-    cursor.style.opacity = '1';
-});
-
-document.addEventListener('mouseleave', () => {
-    cursor.style.opacity = '0';
-});
 
 // Add this to your existing JavaScript
 const navToggle = document.querySelector('.nav-toggle');
@@ -60,4 +43,4 @@ document.addEventListener('click', (e) => {
         mainNav.classList.remove('active');
         navToggle.setAttribute('aria-expanded', 'false');
     }
-}); 
+});

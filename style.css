@@ -59,36 +59,6 @@ body {
     transition: background-color var(--transition-normal);
 }
 
-/* Custom Cursor */
-.cursor {
-    position: fixed;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: rgba(56, 189, 248, 0.5);
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    mix-blend-mode: difference;
-    z-index: 9999;
-    transition: transform 0.1s ease;
-    opacity: 0;
-}
-
-@media (pointer: fine) {
-    .cursor {
-        opacity: 1;
-    }
-
-    body {
-        cursor: none;
-    }
-
-    a,
-    button {
-        cursor: none;
-    }
-}
-
 /* Typography */
 h1,
 h2,
