@@ -19,7 +19,7 @@
 
     <header class="site-header">
         <div class="container">
-            <a href="#" class="logo">Dikamjit Borah</a>
+            <a href="#" class="logo"></a>
             <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
                 <span class="hamburger"></span>
             </button>
@@ -39,13 +39,19 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1 class="hero-title">Hi, I am Dikamjit Borah</h1>
+                    <h1 class="hero-title">
+                        <span class="greeting">Hi, I am</span>
+                        <span class="name">Dikamjit Borah</span>
+                    </h1>
                     <p class="hero-subtitle">I build scalable microservices, APIs, and automation using Node.js,
                         TypeScript, AWS, and DevOps. I have experience in blockchain, AI automation, and Android
                         development.
                     </p>
-                    <a href="#about" class="btn btn-primary">Download Resume</a>
-                    <a href="#about" class="btn btn-primary">Get in Touch</a>
+                    <div class="hero-buttons">
+                        <a href="DikamjitBorahResume2025.pdf" class="btn btn-primary"
+                            download="DikamjitBorahResume2025.pdf">Download Resume</a>
+                        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+                    </div>
                 </div>
                 <div class="hero-image">
                     <div class="shape shape-1"></div>
@@ -122,18 +128,22 @@
                     </div>
 
                     <div class="skill-group">
-                        <h3>Platforms & Tools</h3>
+                        <h3>Tools and Technologies</h3>
                         <div class="skill-tags">
                             <span class="skill-tag">Node.js</span>
                             <span class="skill-tag">Nest.js</span>
-                            <span class="skill-tag">SQL</span>
                             <span class="skill-tag">MySQL</span>
                             <span class="skill-tag">MongoDB</span>
                             <span class="skill-tag">RabbitMQ</span>
                             <span class="skill-tag">ElasticSearch</span>
                             <span class="skill-tag">Firebase</span>
+                            <span class="skill-tag">Redis</span>
+                            <span class="skill-tag">Socket.IO</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Datadog</span>
                             <span class="skill-tag">AWS</span>
                             <span class="skill-tag">Next.js</span>
+                            <span class="skill-tag">React.js</span>
                         </div>
                     </div>
                 </div>
@@ -153,10 +163,16 @@
                             </iframe>
                         </div>
                         <div class="project-content">
-                            <h3 class="project-title">Project Title 1</h3>
+                            <h3 class="project-title">Testato</h3>
                             <p class="project-description">
-                                Add your project description here (approximately 500 words)...
+                                A microservices-based platform to locate medicines in nearby pharmacies. It includes an
+                                ERP that extracts pharmacy data, a backend that updates availability
+                                in database, and an Android app for search and navigation.
                             </p>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-primary">View Live Demo</a>
+                                <a href="#" class="btn btn-outline">View Source Code</a>
+                            </div>
                         </div>
                     </div>
                     <div class="project-card">
@@ -168,10 +184,15 @@
                             </iframe>
                         </div>
                         <div class="project-content">
-                            <h3 class="project-title">Project Title 1</h3>
+                            <h3 class="project-title">Sountry</h3>
                             <p class="project-description">
-                                Add your project description here (approximately 500 words)...
+                                A social media platform for musicians to connect, chat, and collaborate. Users can
+                                discover music covers, connect with others, and post queries in a shared forum.
                             </p>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-primary">View Live Demo</a>
+                                <a href="#" class="btn btn-outline">View Source Code</a>
+                            </div>
                         </div>
                     </div>
                     <div class="project-card">
@@ -183,28 +204,15 @@
                             </iframe>
                         </div>
                         <div class="project-content">
-                            <h3 class="project-title">Project Title 1</h3>
+                            <h3 class="project-title">BuddAlert</h3>
                             <p class="project-description">
-                                Add your project description here (approximately 500 words)...
+                                An Android app for location-based alarms and reminders. Users receive alerts upon
+                                reaching destinations and can share their location with contacts at set intervals.
                             </p>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-video">
-                            <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_1" title="Project 1"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen>
-                            </iframe>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Project Title 1</h3>
-                            <p class="project-description">
-                                Add your project description here (approximately 500 words)...
-                            </p>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-primary">View Live Demo</a>
+                                <a href="#" class="btn btn-outline">View Source Code</a>
+                            </div>
                         </div>
                     </div>
                     <div class="project-card">
@@ -216,10 +224,15 @@
                             </iframe>
                         </div>
                         <div class="project-content">
-                            <h3 class="project-title">Project Title 1</h3>
+                            <h3 class="project-title">CourierPad</h3>
                             <p class="project-description">
-                                Add your project description here (approximately 500 words)...
+                                An Android app for courier management. Admins assign deliveries to agents, who track and
+                                complete orders via a dedicated dashboard.
                             </p>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-primary">View Live Demo</a>
+                                <a href="#" class="btn btn-outline">View Source Code</a>
+                            </div>
                         </div>
                     </div>
                     <div class="project-card">
@@ -231,10 +244,35 @@
                             </iframe>
                         </div>
                         <div class="project-content">
-                            <h3 class="project-title">Project Title 1</h3>
+                            <h3 class="project-title">Imminear</h3>
                             <p class="project-description">
-                                Add your project description here (approximately 500 words)...
+                                A COVID-19 awareness app that allows locals to view nearby registered migrants from
+                                high-risk areas, helping users make informed decisions.
                             </p>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-primary">View Live Demo</a>
+                                <a href="#" class="btn btn-outline">View Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-video">
+                            <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_1" title="Project 1"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Scholine Plus</h3>
+                            <p class="project-description">
+                                A web-based student management system for tracking records, attendance, admissions, and
+                                payments, streamlining administrative tasks in schools.
+                            </p>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-primary">View Live Demo</a>
+                                <a href="#" class="btn btn-outline">View Source Code</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -247,40 +285,42 @@
                 <div class="experience-timeline">
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
-                        <div class="timeline-date">2021-Present</div>
+                        <div class="timeline-date">OCT 2022 - JAN 2023</div>
                         <div class="timeline-content">
-                            <h3>Web Developer</h3>
-                            <h4>Acme Corporation</h4>
-                            <p>Developing responsive web applications with a focus on user experience.</p>
+                            <h3>SDE I</h3>
+                            <h4>Woovly</h4>
+                            <p>Led the development of a Content Moderation dashboard, designing optimized database
+                                schemas and RESTful APIs.</p>
+                            <p>Integrated Google SSO with OAuth 2.0 for seamless authentication.</p>
+                            <p>Built a real-time data pipeline with Logstash & Elasticsearch, enhancing search,
+                                filtering, and logging efficiency.</p>
                         </div>
                     </div>
 
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
-                        <div class="timeline-date">2019-2021</div>
+                        <div class="timeline-date">JUL 2021 - SEP 2022</div>
                         <div class="timeline-content">
-                            <h3>Freelance Web Developer</h3>
-                            <p>Designed and built custom websites for various clients.</p>
+                            <h3>Software Developer</h3>
+                            <h4>SuperProcure</h4>
+                            <p>Developed logistics and transportation management modules for B2B clients, streamlining
+                                operations.</p>
+                            <p>Maintained and optimized the Android application, resolving critical bugs and ensuring
+                                smooth performance.</p>
                         </div>
                     </div>
 
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
-                        <div class="timeline-date">2017-2019</div>
+                        <div class="timeline-date">JAN 2021 - JUN 2021</div>
                         <div class="timeline-content">
-                            <h3>Graphic Designer</h3>
-                            <h4>XYZ Company</h4>
-                            <p>Created visual assets and branding materials for digital media.</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">2015-2017</div>
-                        <div class="timeline-content">
-                            <h3>Software Engineer</h3>
-                            <h4>Google</h4>
-                            <p>Developed and maintained web applications using cutting-edge technologies.</p>
+                            <h3>Full Stack Engineer</h3>
+                            <h4>Digicenter Assam</h4>
+                            <p>Developed reusable UI components with React and built clean, scalable APIs using Node.js
+                                and Express.</p>
+                            <p>Integrated frontend, backend, and mobile applications for seamless functionality.</p>
+                            <p>Collaborated with technical and design teams to build a new Android platform with
+                                efficient, scalable code.</p>
                         </div>
                     </div>
                 </div>
@@ -301,25 +341,64 @@
                             </svg>
                         </div>
                         <div class="education-info">
-                            <h3>Master of Science in Computer Science</h3>
-                            <h4>Stanford University</h4>
+                            <h3>Bachelor of Technology in Computer Science and Engineering</h3>
+                            <h4>Assam Science and Technology University, Guwahati</h4>
+                            <h5>2016 - 2020</h5>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
 
-                    <div class="education-card">
-                        <div class="education-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
-                                <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5" />
-                            </svg>
-                        </div>
-                        <div class="education-info">
-                            <h3>Bachelor of Science in Computer Science</h3>
-                            <h4>University of California, Berkeley</h4>
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title" data-text="Contact">Contact</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <p>Feel free to reach out for collaborations, opportunities, or just to say hello!</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                <span>dikamjitborah2020@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>Guwahati, Assam</span>
+                            </div>
                         </div>
                     </div>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -328,7 +407,7 @@
     <footer class="site-footer">
         <div class="container">
             <div class="footer-content">
-                <p class="copyright">&copy; 2023 My Portfolio</p>
+                <p class="copyright">&copy; 2025 Dikamjit Borah</p>
                 <div class="social-links">
                     <a href="#" aria-label="GitHub profile" class="social-link">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
@@ -345,6 +424,23 @@
                             </path>
                             <rect x="2" y="9" width="4" height="12"></rect>
                             <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="YouTube channel" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+                            </path>
+                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Instagram profile" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                         </svg>
                     </a>
                     <a href="#" aria-label="Twitter profile" class="social-link">
